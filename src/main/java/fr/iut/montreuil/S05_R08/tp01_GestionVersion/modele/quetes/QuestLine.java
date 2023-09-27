@@ -16,7 +16,7 @@ public class QuestLine {
     public QuestLine(Joueur j){
         joueur = j;
         quetes = FXCollections.observableArrayList();
-        quetes.add(new TalkQuete("Chapitre 0 - Que veut le prof ?", "Que dois je faire ? On va jouer pendant tout le cours ?", 10, "Potion", 1, "spectre"));
+        quetes.add(new TalkQuete("Chapitre 0 - Que veut le prof ?", "Que dois je faire ? Comment devenir hokage ?", 10, "Potion", 1, "spectre"));
         quetes.add(new TalkQuete("Chapitre 1 - C'est parti pour le TP", "Si vous voulez jouer, il faudra d'abord suivre le TP.\n Si vous arrivez au bout, il faudra être le 1er à push le code pour obtenir le bonus ultime !!!!\n Serez vous de taille ?", 5, "Commit", 1, "vendeur"));
         quetes.add(new TalkQuete("Chapitre 1 - C'est parti pour le TP", "'Salut à toi héros ici tu trouveras tout ce qu'il te faut, va voir le forgeron pour acheter des armes ou traiter tes minerais'\nAller parler au forgeron au sud de la ville.", 5, "Miel", 1, "upgrader"));
         quetes.add(new LootQuete("Chapitre 1 - C'est parti pour le TP", "'Si tu veux acheter du nouveau matos c'est ici que ça se passe ! Tiens d'ailleurs, rend moi un service tu veux.'\nMiner une source de minerai à l'est.", 10, "Fer", 1, "SourceMinerai", 1));
@@ -52,7 +52,7 @@ public class QuestLine {
         quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'J'ai toujours su que quelque chose n'allais pas, il nous manque quelque chose. Quelque chose de très important. Tout ca a surement un rapport avec les hallucinations à l'ouest vous devriez y jeter un coup d'oeil.'\nSe rendre a l'ouest et enquêter.", 30, "", 0, "cavegirl"));
         quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "Discuter avec la fille aux cheveux sales.", 30, "", 0, "cavegirl"));
         quetes.add(new KillQuete("Chapitre 5 - Hallucination collective", "'J'aurai jamais cru demander de l'aide à quelqu'un de puant que vous, mais je n'ai pas le choix... Les bambous commencent a envahir mon espace vital !'\nTuer 2 bambous vivants.", 10, "", 0, "Bambou", 2));
-        quetes.add(new KillQuete("Chapitre 5 - Hallucination collective", "'Qu'est ce que c'est que ce monument ? Personne n'a remarque ca ? Je vais tenter de degager la zone et d'en parler à la fille.'\nTuer 2 reptiles au nord de la maison de la fille.", 10, "", 0, "Reptile", 2));
+        quetes.add(new KillQuete("ChapSourceSourceitre 5 - Hallucination collective", "'Qu'est ce que c'est que ce monument ? Personne n'a remarque ca ? Je vais tenter de degager la zone et d'en parler à la fille.'\nTuer 2 reptiles au nord de la maison de la fille.", 10, "", 0, "Reptile", 2));
         quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "Retourner voir la fille aux cheveux sales.", 200, "Nouilles", 3, "cavegirl"));
         quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Un monument ? Quoi, au dessus ? Un pont ? Je me disais bien que vous aviez un problème vous, en tout cas merci de votre aide quand meme. Vous devriez peut etre vous faire soigner...'\nRetourner voir le maitre du dojo.", 30, "Niveau", 1, "master"));
         quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Un monument a l'ouest ? Mais oui biensur ! Seul le proprietaire du livre de Momoku ressent ce qu'autrui ignore! Vous êtes l'elu !!'\nDiscuter avec le maitre du dojo.", 30, "", 0, "master"));
