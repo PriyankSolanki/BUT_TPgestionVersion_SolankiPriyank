@@ -29,7 +29,7 @@ public class Joueur {
     private IntegerProperty maxHP = new SimpleIntegerProperty();
     private IntegerProperty niveau;
     private QuestLine listeQuetes;
-    private int nbPas = 0;
+    private int nbPas;
 
     public Joueur(int x, int y, Terrain zone) {
         arme = new Gourdin(); // Le joueur commence avec un gourdin
@@ -43,6 +43,15 @@ public class Joueur {
         niveau = new SimpleIntegerProperty(1);
         this.inventaire = new Inventaire();
         this.listeQuetes = new QuestLine(this);
+        this.nbPas = 0;
+    }
+
+    public int getNbPas() {
+        return nbPas;
+    }
+
+    public void setNbPas(int nbPas) {
+        this.nbPas = nbPas;
     }
 
     public ArmeDistance getArmeDistance() {
